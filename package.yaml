@@ -48,7 +48,26 @@ executables:
     dependencies:
     - atcoder
 
-  abc156-c:
+  sb2019-b:
+    main:                Main.hs
+    source-dirs:         sb2019/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-cf2016-b:
+    main:                Main.hs
+    source-dirs:         cf2016/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -DDEBUG
+    dependencies:
+    - atcoder
+  z-abc156-c:
     main:                Main.hs
     source-dirs:         abc156/c
     ghc-options:

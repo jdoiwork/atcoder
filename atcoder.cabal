@@ -38,21 +38,6 @@ library
     , extra
   default-language: Haskell2010
 
-executable abc156-c
-  main-is: Main.hs
-  other-modules:
-      Paths_atcoder
-  autogen-modules:
-      Paths_atcoder
-  hs-source-dirs:
-      abc156/c
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      atcoder
-    , base >=4.7 && <5
-    , extra
-  default-language: Haskell2010
-
 executable atcoder-exe
   main-is: Main.hs
   other-modules:
@@ -61,6 +46,21 @@ executable atcoder-exe
       Paths_atcoder
   hs-source-dirs:
       app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      atcoder
+    , base >=4.7 && <5
+    , extra
+  default-language: Haskell2010
+
+executable sb2019-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      sb2019/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       atcoder
@@ -83,6 +83,21 @@ executable z-abc139-b
     , extra
   default-language: Haskell2010
 
+executable z-abc156-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      abc156/c
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      atcoder
+    , base >=4.7 && <5
+    , extra
+  default-language: Haskell2010
+
 executable z-abc395-a
   main-is: Main.hs
   other-modules:
@@ -92,6 +107,21 @@ executable z-abc395-a
   hs-source-dirs:
       abc395/a
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      atcoder
+    , base >=4.7 && <5
+    , extra
+  default-language: Haskell2010
+
+executable z-cf2016-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      cf2016/b
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -DDEBUG
   build-depends:
       atcoder
     , base >=4.7 && <5
