@@ -48,7 +48,16 @@ executables:
     dependencies:
     - atcoder
 
-  abc121-c:
+  pana2020-b:
+    main:                Main.hs
+    source-dirs:         pana2020/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-abc121-c:
     main:                Main.hs
     source-dirs:         abc121/c
     ghc-options:
