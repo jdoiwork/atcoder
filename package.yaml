@@ -22,6 +22,8 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - extra
+- unordered-containers
+- containers
 
 ghc-options:
 - -Wall
@@ -48,7 +50,16 @@ executables:
     dependencies:
     - atcoder
 
-  pana2020-b:
+  abc157-b:
+    main:                Main.hs
+    source-dirs:         abc157/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-pana2020-b:
     main:                Main.hs
     source-dirs:         pana2020/b
     ghc-options:
