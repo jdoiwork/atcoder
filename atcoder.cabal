@@ -43,14 +43,14 @@ library
     , vector
   default-language: Haskell2010
 
-executable abc132-c
+executable abc142-c
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      abc132/c
+      abc142/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       atcoder
@@ -191,6 +191,26 @@ executable z-abc121-c
       Paths_atcoder
   hs-source-dirs:
       abc121/c
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      atcoder
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable z-abc132-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      abc132/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       atcoder
