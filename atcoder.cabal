@@ -40,16 +40,17 @@ library
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
-executable abc161-c
+executable abc132-c
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      abc161/c
+      abc132/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       atcoder
@@ -59,6 +60,7 @@ executable abc161-c
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable atcoder-exe
@@ -78,6 +80,7 @@ executable atcoder-exe
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc068-b
@@ -97,6 +100,7 @@ executable z-abc068-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc074-b
@@ -116,6 +120,7 @@ executable z-abc074-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc086-b
@@ -135,6 +140,7 @@ executable z-abc086-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc088-b
@@ -154,6 +160,7 @@ executable z-abc088-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc121-b
@@ -173,6 +180,7 @@ executable z-abc121-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc121-c
@@ -192,6 +200,7 @@ executable z-abc121-c
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc139-b
@@ -211,6 +220,7 @@ executable z-abc139-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc156-c
@@ -230,6 +240,7 @@ executable z-abc156-c
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc157-b
@@ -249,6 +260,7 @@ executable z-abc157-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc160-c
@@ -268,6 +280,27 @@ executable z-abc160-c
     , mtl
     , text
     , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable z-abc161-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      abc161/c
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      atcoder
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , mtl
+    , text
+    , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-abc395-a
@@ -287,6 +320,7 @@ executable z-abc395-a
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-agc014-a
@@ -306,6 +340,7 @@ executable z-agc014-a
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-cf2016-b
@@ -325,6 +360,7 @@ executable z-cf2016-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-pana2020-b
@@ -344,6 +380,7 @@ executable z-pana2020-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable z-sb2019-b
@@ -363,6 +400,7 @@ executable z-sb2019-b
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010
 
 test-suite atcoder-test
@@ -383,4 +421,5 @@ test-suite atcoder-test
     , mtl
     , text
     , unordered-containers
+    , vector
   default-language: Haskell2010

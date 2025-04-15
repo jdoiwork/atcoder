@@ -26,6 +26,7 @@ dependencies:
 - containers
 - text
 - mtl
+- vector
 
 ghc-options:
 - -Wall
@@ -52,7 +53,16 @@ executables:
     dependencies:
     - atcoder
 
-  abc161-c:
+  abc132-c:
+    main:                Main.hs
+    source-dirs:         abc132/c
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-abc161-c:
     main:                Main.hs
     source-dirs:         abc161/c
     ghc-options:
