@@ -37,23 +37,25 @@ library
       base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
-executable abc068-b
+executable abc160-c
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      abc068/b
+      abc160/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       atcoder
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -71,6 +73,25 @@ executable atcoder-exe
     , base >=4.7 && <5
     , containers
     , extra
+    , text
+    , unordered-containers
+  default-language: Haskell2010
+
+executable z-abc068-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      abc068/b
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      atcoder
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -88,6 +109,7 @@ executable z-abc074-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -105,6 +127,7 @@ executable z-abc086-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -122,6 +145,7 @@ executable z-abc088-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -139,6 +163,7 @@ executable z-abc121-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -156,6 +181,7 @@ executable z-abc121-c
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -173,6 +199,7 @@ executable z-abc139-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -190,6 +217,7 @@ executable z-abc156-c
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -207,6 +235,7 @@ executable z-abc157-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -224,6 +253,7 @@ executable z-abc395-a
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -241,6 +271,7 @@ executable z-cf2016-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -258,6 +289,7 @@ executable z-pana2020-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -275,6 +307,7 @@ executable z-sb2019-b
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
 
@@ -293,5 +326,6 @@ test-suite atcoder-test
     , base >=4.7 && <5
     , containers
     , extra
+    , text
     , unordered-containers
   default-language: Haskell2010
