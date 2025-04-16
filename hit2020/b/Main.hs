@@ -1,20 +1,18 @@
 import qualified Data.Text.IO as T
 import qualified Data.Text as T
 import Control.Monad (replicateM)
-import qualified Data.Array as A
+import qualified Data.Vector.Unboxed as V
 
 main :: IO ()
 main = do
-  [r, m, c] <- readNumbers
+  [_r, _m, c] <- readNumbers
 
-  refrigerators <- readNumbers
-  microwave <- readNumbers
+  refrigerators <- makeTable <$> readNumbers
+  microwave <- makeTable <$> readNumbers
   coupons <- replicateM c (makeCoupon <$> readNumbers)
 
-  let rTable = makeTable r refrigerators
-      mTable = makeTable m microwave
-      simpleCost = minimum refrigerators + minimum microwave
-      couponCosts = map (couponCost rTable mTable) coupons
+  let simpleCost = V.minimum refrigerators + V.minimum microwave
+      couponCosts = map (couponCost refrigerators microwave) coupons
       minCost = minimum $ simpleCost : couponCosts
 
   print minCost
@@ -32,12 +30,12 @@ makeCoupon :: [Int] -> Counpon
 makeCoupon [r, m, d] = Counpon r m d
 makeCoupon _ = error "Invalid coupon format"
 
-type Table = A.Array Int Int
-makeTable :: Int -> [Int] -> Table
-makeTable n xs = A.listArray (1, n) xs
+type Table = V.Vector Int
+makeTable :: [Int] -> Table
+makeTable = V.fromList
 
 couponCost :: Table -> Table -> Counpon -> Int
 couponCost rTable mTable (Counpon r m d) = rCost + mCost - d
   where
-    rCost = rTable A.! r
-    mCost = mTable A.! m
+    rCost = rTable V.! (r - 1)
+    mCost = mTable V.! (m - 1)
