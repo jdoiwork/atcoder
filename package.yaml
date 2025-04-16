@@ -27,6 +27,7 @@ dependencies:
 - text
 - mtl
 - vector
+- array
 
 ghc-options:
 - -Wall
@@ -53,7 +54,16 @@ executables:
     dependencies:
     - atcoder
 
-  abc092-b:
+  hit2020-b:
+    main:                Main.hs
+    source-dirs:         hit2020/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-abc092-b:
     main:                Main.hs
     source-dirs:         abc092/b
     ghc-options:

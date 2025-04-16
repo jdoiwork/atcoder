@@ -34,26 +34,7 @@ library
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
-    , containers
-    , extra
-    , mtl
-    , text
-    , unordered-containers
-    , vector
-  default-language: Haskell2010
-
-executable abc092-b
-  main-is: Main.hs
-  other-modules:
-      Paths_atcoder
-  autogen-modules:
-      Paths_atcoder
-  hs-source-dirs:
-      abc092/b
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      atcoder
+      array
     , base >=4.7 && <5
     , containers
     , extra
@@ -73,7 +54,29 @@ executable atcoder-exe
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable hit2020-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      hit2020/b
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -93,7 +96,8 @@ executable z-abc068-b
       abc068/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -113,7 +117,8 @@ executable z-abc074-b
       abc074/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -133,7 +138,8 @@ executable z-abc086-b
       abc086/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -153,7 +159,29 @@ executable z-abc088-b
       abc088/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable z-abc092-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      abc092/b
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -173,7 +201,8 @@ executable z-abc094-b
       abc094/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -193,7 +222,8 @@ executable z-abc116-b
       abc116/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -213,7 +243,8 @@ executable z-abc121-b
       abc121/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -233,7 +264,8 @@ executable z-abc121-c
       abc121/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -253,7 +285,8 @@ executable z-abc122-b
       abc122/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -273,7 +306,8 @@ executable z-abc132-c
       abc132/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -293,7 +327,8 @@ executable z-abc138-c
       abc138/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -313,7 +348,8 @@ executable z-abc139-b
       abc139/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -333,7 +369,8 @@ executable z-abc142-c
       abc142/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -353,7 +390,8 @@ executable z-abc149-c
       abc149/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -373,7 +411,8 @@ executable z-abc156-c
       abc156/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -393,7 +432,8 @@ executable z-abc157-b
       abc157/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -413,7 +453,8 @@ executable z-abc160-c
       abc160/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -433,7 +474,8 @@ executable z-abc161-c
       abc161/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -453,7 +495,8 @@ executable z-abc395-a
       abc395/a
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -473,7 +516,8 @@ executable z-agc014-a
       agc014/a
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -493,7 +537,8 @@ executable z-agc027-a
       agc027/a
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -513,7 +558,8 @@ executable z-cf2016-b
       cf2016/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -DDEBUG
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -533,7 +579,8 @@ executable z-pana2020-b
       pana2020/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -553,7 +600,8 @@ executable z-sb2019-b
       sb2019/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
@@ -574,7 +622,8 @@ test-suite atcoder-test
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      atcoder
+      array
+    , atcoder
     , base >=4.7 && <5
     , containers
     , extra
