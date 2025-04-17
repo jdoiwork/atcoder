@@ -28,6 +28,7 @@ dependencies:
 - mtl
 - vector
 - array
+- attoparsec
 
 ghc-options:
 - -Wall
@@ -54,7 +55,16 @@ executables:
     dependencies:
     - atcoder
 
-  abc052-b:
+  abc084-b:
+    main:                Main.hs
+    source-dirs:         abc084/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-abc052-b:
     main:                Main.hs
     source-dirs:         abc052/b
     ghc-options:

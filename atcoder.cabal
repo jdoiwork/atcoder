@@ -35,6 +35,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       array
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -44,18 +45,19 @@ library
     , vector
   default-language: Haskell2010
 
-executable abc052-b
+executable abc084-b
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      abc052/b
+      abc084/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -77,6 +79,29 @@ executable atcoder-exe
   build-depends:
       array
     , atcoder
+    , attoparsec
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable z-abc052-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      abc052/b
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -98,6 +123,7 @@ executable z-abc063-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -119,6 +145,7 @@ executable z-abc068-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -140,6 +167,7 @@ executable z-abc074-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -161,6 +189,7 @@ executable z-abc081-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -182,6 +211,7 @@ executable z-abc086-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -203,6 +233,7 @@ executable z-abc088-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -224,6 +255,7 @@ executable z-abc092-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -245,6 +277,7 @@ executable z-abc094-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -266,6 +299,7 @@ executable z-abc108-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -287,6 +321,7 @@ executable z-abc114-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -308,6 +343,7 @@ executable z-abc116-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -329,6 +365,7 @@ executable z-abc121-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -350,6 +387,7 @@ executable z-abc121-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -371,6 +409,7 @@ executable z-abc122-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -392,6 +431,7 @@ executable z-abc132-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -413,6 +453,7 @@ executable z-abc138-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -434,6 +475,7 @@ executable z-abc139-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -455,6 +497,7 @@ executable z-abc142-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -476,6 +519,7 @@ executable z-abc149-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -497,6 +541,7 @@ executable z-abc150-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -518,6 +563,7 @@ executable z-abc153-d
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -539,6 +585,7 @@ executable z-abc156-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -560,6 +607,7 @@ executable z-abc157-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -581,6 +629,7 @@ executable z-abc158-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -602,6 +651,7 @@ executable z-abc160-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -623,6 +673,7 @@ executable z-abc161-c
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -644,6 +695,7 @@ executable z-abc395-a
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -665,6 +717,7 @@ executable z-agc014-a
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -686,6 +739,7 @@ executable z-agc027-a
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -707,6 +761,7 @@ executable z-cf2016-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -728,6 +783,7 @@ executable z-hit2020-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -749,6 +805,7 @@ executable z-pana2020-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -770,6 +827,7 @@ executable z-sb2019-b
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
@@ -792,6 +850,7 @@ test-suite atcoder-test
   build-depends:
       array
     , atcoder
+    , attoparsec
     , base >=4.7 && <5
     , containers
     , extra
