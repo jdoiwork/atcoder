@@ -54,7 +54,16 @@ executables:
     dependencies:
     - atcoder
 
-  hit2020-b:
+  abc150-c:
+    main:                Main.hs
+    source-dirs:         abc150/c
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-hit2020-b:
     main:                Main.hs
     source-dirs:         hit2020/b
     ghc-options:
