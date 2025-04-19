@@ -30,6 +30,7 @@ dependencies:
 - array
 - attoparsec
 - heap
+- lens
 
 ghc-options:
 - -Wall
@@ -56,7 +57,16 @@ executables:
     dependencies:
     - atcoder
 
-  abc079-b:
+  abc139-c:
+    main:                Main.hs
+    source-dirs:         abc139/c
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-abc079-b:
     main:                Main.hs
     source-dirs:         abc079/b
     ghc-options:
