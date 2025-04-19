@@ -1,5 +1,10 @@
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE TemplateHaskell #-}
+
 import qualified Data.Text.Lazy.IO as T
 import qualified Data.Text.Lazy as T
+import Control.Monad (replicateM)
 
 type IntX = Int
 
