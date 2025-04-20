@@ -57,7 +57,16 @@ executables:
     dependencies:
     - atcoder
 
-  abc097-b:
+  agc021-a:
+    main:                Main.hs
+    source-dirs:         agc021/a
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-abc097-b:
     main:                Main.hs
     source-dirs:         abc097/b
     ghc-options:
