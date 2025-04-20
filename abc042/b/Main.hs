@@ -1,19 +1,16 @@
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE RecordWildCards #-}
-{-# LANGUAGE TemplateHaskell #-}
-
 import qualified Data.Text.Lazy.IO as T
 import qualified Data.Text.Lazy as T
 import Control.Monad (replicateM)
-import System.IO (hPrint, stderr)
+import Data.List (sort)
 
 type IntX = Int
 
 main :: IO ()
 main = do
-  [n] <- readNumbers
+  [n, _l] <- readNumbers
+  ss <- replicateM n T.getLine
 
-  hPrint stderr $ (n)
+  T.putStrLn $ T.concat $ sort ss
 
 readNumbers :: IO [IntX]
 readNumbers = map (read . T.unpack) . T.words <$> T.getLine
