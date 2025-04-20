@@ -45,16 +45,17 @@ library
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
-executable arc096-a
+executable abc115-c
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      arc096/a
+      abc115/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       array
@@ -69,6 +70,7 @@ executable arc096-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable atcoder-exe
@@ -93,6 +95,7 @@ executable atcoder-exe
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable sum2019-c
@@ -117,6 +120,7 @@ executable sum2019-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc042-b
@@ -141,6 +145,7 @@ executable z-abc042-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc044-b
@@ -165,6 +170,7 @@ executable z-abc044-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc049-b
@@ -189,6 +195,7 @@ executable z-abc049-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc050-b
@@ -213,6 +220,7 @@ executable z-abc050-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc052-b
@@ -237,6 +245,7 @@ executable z-abc052-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc053-b
@@ -261,6 +270,7 @@ executable z-abc053-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc058-b
@@ -285,6 +295,7 @@ executable z-abc058-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc059-b
@@ -309,6 +320,7 @@ executable z-abc059-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc061-b
@@ -333,6 +345,7 @@ executable z-abc061-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc062-b
@@ -357,6 +370,7 @@ executable z-abc062-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc063-b
@@ -381,6 +395,7 @@ executable z-abc063-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc068-b
@@ -405,6 +420,7 @@ executable z-abc068-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc071-b
@@ -429,6 +445,7 @@ executable z-abc071-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc074-b
@@ -453,6 +470,7 @@ executable z-abc074-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc079-b
@@ -477,6 +495,7 @@ executable z-abc079-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc081-b
@@ -501,6 +520,7 @@ executable z-abc081-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc083-b
@@ -525,6 +545,7 @@ executable z-abc083-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc084-b
@@ -549,6 +570,7 @@ executable z-abc084-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc086-b
@@ -573,6 +595,7 @@ executable z-abc086-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc087-b
@@ -597,6 +620,7 @@ executable z-abc087-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc088-b
@@ -621,6 +645,7 @@ executable z-abc088-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc090-b
@@ -645,6 +670,7 @@ executable z-abc090-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc092-b
@@ -669,6 +695,7 @@ executable z-abc092-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc093-b
@@ -693,6 +720,7 @@ executable z-abc093-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc094-b
@@ -717,6 +745,7 @@ executable z-abc094-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc097-b
@@ -741,6 +770,7 @@ executable z-abc097-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc103-b
@@ -765,6 +795,7 @@ executable z-abc103-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc104-b
@@ -789,6 +820,7 @@ executable z-abc104-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc108-b
@@ -813,6 +845,7 @@ executable z-abc108-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc109-b
@@ -837,6 +870,7 @@ executable z-abc109-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc113-b
@@ -861,6 +895,7 @@ executable z-abc113-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc114-b
@@ -885,6 +920,7 @@ executable z-abc114-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc116-b
@@ -909,6 +945,7 @@ executable z-abc116-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc118-b
@@ -933,6 +970,7 @@ executable z-abc118-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc121-b
@@ -957,6 +995,7 @@ executable z-abc121-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc121-c
@@ -981,6 +1020,7 @@ executable z-abc121-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc122-b
@@ -1005,6 +1045,7 @@ executable z-abc122-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc123-b
@@ -1029,6 +1070,7 @@ executable z-abc123-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc124-c
@@ -1053,6 +1095,7 @@ executable z-abc124-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc127-c
@@ -1077,6 +1120,7 @@ executable z-abc127-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc128-b
@@ -1101,6 +1145,7 @@ executable z-abc128-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc132-c
@@ -1125,6 +1170,7 @@ executable z-abc132-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc133-b
@@ -1149,6 +1195,7 @@ executable z-abc133-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc134-c
@@ -1173,6 +1220,7 @@ executable z-abc134-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc138-c
@@ -1197,6 +1245,7 @@ executable z-abc138-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc139-b
@@ -1221,6 +1270,7 @@ executable z-abc139-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc139-c
@@ -1245,6 +1295,7 @@ executable z-abc139-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc140-c
@@ -1269,6 +1320,7 @@ executable z-abc140-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc141-c
@@ -1293,6 +1345,7 @@ executable z-abc141-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc142-c
@@ -1317,6 +1370,7 @@ executable z-abc142-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc148-d
@@ -1341,6 +1395,7 @@ executable z-abc148-d
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc149-c
@@ -1365,6 +1420,7 @@ executable z-abc149-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc150-c
@@ -1389,6 +1445,7 @@ executable z-abc150-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc152-c
@@ -1413,6 +1470,7 @@ executable z-abc152-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc153-d
@@ -1437,6 +1495,7 @@ executable z-abc153-d
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc155-c
@@ -1461,6 +1520,7 @@ executable z-abc155-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc156-c
@@ -1485,6 +1545,7 @@ executable z-abc156-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc157-b
@@ -1509,6 +1570,7 @@ executable z-abc157-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc158-b
@@ -1533,6 +1595,7 @@ executable z-abc158-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc158-c
@@ -1557,6 +1620,7 @@ executable z-abc158-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc160-c
@@ -1581,6 +1645,7 @@ executable z-abc160-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc161-c
@@ -1605,6 +1670,7 @@ executable z-abc161-c
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-abc395-a
@@ -1629,6 +1695,7 @@ executable z-abc395-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-agc002-a
@@ -1653,6 +1720,7 @@ executable z-agc002-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-agc003-a
@@ -1677,6 +1745,7 @@ executable z-agc003-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-agc014-a
@@ -1701,6 +1770,7 @@ executable z-agc014-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-agc021-a
@@ -1725,6 +1795,7 @@ executable z-agc021-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-agc024-a
@@ -1749,6 +1820,7 @@ executable z-agc024-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-agc027-a
@@ -1773,6 +1845,7 @@ executable z-agc027-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-agc037-a
@@ -1797,6 +1870,32 @@ executable z-agc037-a
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
+  default-language: Haskell2010
+
+executable z-arc096-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      arc096/a
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , atcoder
+    , attoparsec
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , heap
+    , lens
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-cf2016-b
@@ -1821,6 +1920,7 @@ executable z-cf2016-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-hit2020-b
@@ -1845,6 +1945,7 @@ executable z-hit2020-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-pana2020-b
@@ -1869,6 +1970,7 @@ executable z-pana2020-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 executable z-sb2019-b
@@ -1893,6 +1995,7 @@ executable z-sb2019-b
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
 
 test-suite atcoder-test
@@ -1918,4 +2021,5 @@ test-suite atcoder-test
     , text
     , unordered-containers
     , vector
+    , vector-algorithms
   default-language: Haskell2010
