@@ -57,7 +57,16 @@ executables:
     dependencies:
     - atcoder
 
-  agc037-a:
+  sum2019-c:
+    main:                Main.hs
+    source-dirs:         sum2019/c
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-agc037-a:
     main:                Main.hs
     source-dirs:         agc037/a
     ghc-options:
