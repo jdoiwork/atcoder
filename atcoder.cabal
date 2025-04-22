@@ -48,14 +48,14 @@ library
     , vector-algorithms
   default-language: Haskell2010
 
-executable atcoder-exe
+executable agc004-a
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      app
+      agc004/a
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       array
@@ -73,14 +73,14 @@ executable atcoder-exe
     , vector-algorithms
   default-language: Haskell2010
 
-executable cf2017-b
+executable atcoder-exe
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      cf2017/b
+      app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       array
@@ -2407,6 +2407,31 @@ executable z-cf2016-b
   hs-source-dirs:
       cf2016/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -DDEBUG
+  build-depends:
+      array
+    , atcoder
+    , attoparsec
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , heap
+    , lens
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+    , vector-algorithms
+  default-language: Haskell2010
+
+executable z-cf2017-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      cf2017/b
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       array
     , atcoder

@@ -58,7 +58,16 @@ executables:
     dependencies:
     - atcoder
 
-  cf2017-b:
+  agc004-a:
+    main:                Main.hs
+    source-dirs:         agc004/a
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-cf2017-b:
     main:                Main.hs
     source-dirs:         cf2017/b
     ghc-options:
