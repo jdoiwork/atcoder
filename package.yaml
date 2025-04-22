@@ -58,7 +58,16 @@ executables:
     dependencies:
     - atcoder
 
-  arc094-a:
+  cf2017-b:
+    main:                Main.hs
+    source-dirs:         cf2017/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-arc094-a:
     main:                Main.hs
     source-dirs:         arc094/a
     ghc-options:
