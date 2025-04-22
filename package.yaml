@@ -58,7 +58,16 @@ executables:
     dependencies:
     - atcoder
 
-  ddcc2020-b:
+  abc079-c:
+    main:                Main.hs
+    source-dirs:         abc079/c
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-ddcc2020-b:
     main:                Main.hs
     source-dirs:         ddcc2020/b
     ghc-options:
