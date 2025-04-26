@@ -1,6 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE OverloadedLists #-}
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE BangPatterns #-}
 
 import qualified Data.Text.Lazy.IO as T
 import qualified Data.Text.Lazy as T
