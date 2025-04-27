@@ -48,14 +48,14 @@ library
     , vector-algorithms
   default-language: Haskell2010
 
-executable abc098-b
+executable abc064-c
   main-is: Main.hs
   other-modules:
       Paths_atcoder
   autogen-modules:
       Paths_atcoder
   hs-source-dirs:
-      abc098/b
+      abc064/c
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       array
@@ -931,6 +931,31 @@ executable z-abc097-b
       Paths_atcoder
   hs-source-dirs:
       abc097/b
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , atcoder
+    , attoparsec
+    , base >=4.7 && <5
+    , containers
+    , extra
+    , heap
+    , lens
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+    , vector-algorithms
+  default-language: Haskell2010
+
+executable z-abc098-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder
+  autogen-modules:
+      Paths_atcoder
+  hs-source-dirs:
+      abc098/b
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       array
