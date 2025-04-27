@@ -58,7 +58,16 @@ executables:
     dependencies:
     - atcoder
 
-  key2019-b:
+  arc075-a:
+    main:                Main.hs
+    source-dirs:         arc075/a
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-key2019-b:
     main:                Main.hs
     source-dirs:         key2019/b
     ghc-options:
