@@ -58,7 +58,16 @@ executables:
     dependencies:
     - atcoder
 
-  div2019-b:
+  abc073-c:
+    main:                Main.hs
+    source-dirs:         abc073/c
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-div2019-b:
     main:                Main.hs
     source-dirs:         div2019/b
     ghc-options:
