@@ -1,22 +1,20 @@
 {-# LANGUAGE BangPatterns #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE OverloadedLists #-}
-{-# LANGUAGE RecordWildCards #-}
-{-# LANGUAGE TemplateHaskell #-}
 
 import qualified Data.Text.Lazy.IO as T
 import qualified Data.Text.Lazy as T
 import qualified Data.Text.Lazy.Read as T
-import Control.Monad (replicateM)
-import System.IO (hPrint, stderr)
+-- import Control.Monad (replicateM)
+-- import System.IO (hPrint, stderr)
+import Data.List (foldl')
 
 type IntX = Int
 
 main :: IO ()
 main = do
-  [n] <- readNumbers
+  [_n, t] <- readNumbers
+  xs <- readNumbers
 
-  hPrint stderr $ (n)
+  print $ fst $ foldl' (shower t) (0, -t) xs
 
 readNumbers :: IO [IntX]
 readNumbers = map readDecimal . T.words <$> T.getLine
@@ -24,3 +22,11 @@ readNumbers = map readDecimal . T.words <$> T.getLine
     readDecimal t = case T.decimal t of
       Right (!n, _) -> n
       Left e -> error $ "Invalid Input: " ++ show e
+
+type Accum = (IntX, IntX)
+
+shower :: IntX -> Accum -> IntX -> Accum
+shower t !(s, lastT) now
+  | lastT + t <= now = (s + t, now)
+  | otherwise        = ((s + t - w), now)
+  where w = lastT + t - now
