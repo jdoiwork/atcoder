@@ -1,14 +1,11 @@
 {-# LANGUAGE BangPatterns #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE OverloadedLists #-}
-{-# LANGUAGE RecordWildCards #-}
-{-# LANGUAGE TemplateHaskell #-}
 
 import qualified Data.Text.Lazy.IO as T
 import qualified Data.Text.Lazy as T
 import qualified Data.Text.Lazy.Read as T
 import Control.Monad (replicateM)
-import System.IO (hPrint, stderr)
+-- import System.IO (hPrint, stderr)
 import qualified Data.Vector.Unboxed as V
 import Data.List (foldl')
 
@@ -19,7 +16,7 @@ main = do
   xs <- V.fromListN 9 . concat <$> replicateM 3 readNumbers
   let [sa, sb, sc] = [sum' $ getRow xs offset | offset <- [0..2]]
 
-  hPrint stderr $ (xs, getRow xs 0, getRow xs 1, getRow xs 2)
+  -- hPrint stderr $ (xs, getRow xs 0, getRow xs 1, getRow xs 2)
   T.putStrLn $ if (sa == sb) && (sb == sc)
     then "Yes"
     else "No"
