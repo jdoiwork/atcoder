@@ -59,7 +59,16 @@ executables:
     dependencies:
     - atcoder
 
-  arc081-a:
+  abc133-c:
+    main:                Main.hs
+    source-dirs:         abc133/c
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-arc081-a:
     main:                Main.hs
     source-dirs:         arc081/a
     ghc-options:
