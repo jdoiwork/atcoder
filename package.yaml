@@ -32,6 +32,7 @@ dependencies:
 - attoparsec
 - heap
 - lens
+- regex-tdfa
 
 ghc-options:
 - -Wall
@@ -58,7 +59,16 @@ executables:
     dependencies:
     - atcoder
 
-  abc117-c:
+  agc016-a:
+    main:                Main.hs
+    source-dirs:         agc016/a
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-abc117-c:
     main:                Main.hs
     source-dirs:         abc117/c
     ghc-options:
