@@ -59,7 +59,16 @@ executables:
     dependencies:
     - atcoder
 
-  arc069-a:
+  cf17final-b:
+    main:                Main.hs
+    source-dirs:         cf17final/b
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - atcoder
+  z-arc069-a:
     main:                Main.hs
     source-dirs:         arc069/a
     ghc-options:
