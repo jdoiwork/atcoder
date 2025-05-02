@@ -15,8 +15,9 @@ main = do
 
   -- hPrint stderr $ (a, b, c)
   -- 4 * a * b < (c - a - b) ^ 2
+  let d = c - a - b
 
-  T.putStrLn $ if (4 * a * b) < ((c - a - b) ^ (2 :: IntX))
+  T.putStrLn $ if 0 < d && (4 * a * b) < (d ^ (2 :: IntX))
     then "Yes"
     else "No"
 
